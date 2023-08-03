@@ -1,10 +1,14 @@
 "use client"
-
+import {  useState,useEffect } from "react";
 import { Progress, Typography } from "@material-tailwind/react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 const page = () => {
-    const dark = localStorage.getItem("theme");
+  const [dark, setDark] = useState();
+  useEffect(() => {
+    setDark(localStorage.getItem("theme"))
+  }, []);
+
   return <section className="home__component mt-[60px] ">
   {/* About Intro */}
   <div className="rounded-xl bg-white p-[40px] dark:bg-card">

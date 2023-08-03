@@ -5,7 +5,7 @@
 @layer base {
   /*
 Author       : themesoft69
-Template Name: Pucu - React Portfolio Template
+Template Name: Pucu - Nextjs Portfolio Template
 Version      : 1.0.1
 */
 
@@ -56,4 +56,7 @@ Version      : 1.0.1
   .ql-container {
     height: 300px !important;
   }
+}
+.b-opa {
+  background: #33333394 !important;
 }

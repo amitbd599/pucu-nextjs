@@ -1,9 +1,17 @@
 "use client";
+import {  useState,useEffect } from "react";
 import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import Link from "next/link";
-export default function Home() {
-  const dark = localStorage.getItem("theme");
+
+
+export default function Home() { 
+  const [dark, setDark] = useState();
+
+  useEffect(() => {
+    setDark(localStorage.getItem("theme"));
+  }, []);
+
   return (
     <section className=" mt-[60px] ">
       {/* About Intro */}
