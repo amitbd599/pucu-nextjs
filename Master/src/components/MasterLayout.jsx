@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa6";
 import ReactTyped from "react-typed";
 import { usePathname } from "next/navigation";
-import { Toaster } from "react-hot-toast";
+
 
 import { ThemeProvider } from "@material-tailwind/react";
 export default function MasterLayout({ children }) {
