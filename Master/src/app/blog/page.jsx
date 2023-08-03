@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { FaCalendarDays, FaUserLarge } from "react-icons/fa6";
 import Blog from "../../script/Blog.js";
@@ -65,12 +65,12 @@ const page = () => {
             <div className="grid grid-cols-12 md:gap-[30px]">
               {Blog.map((item, index) => (
                 <div className="col-span-12 md:col-span-6" key={index}>
-                  <div className="group relative mb-[88px]">
-                    <div className="overflow-hidden rounded-xl ">
+                  <div className="group relative mb-[130px] md:mb-[100px]">
+                    <div className="overflow-hidden rounded-xl w-full h-[293px]">
                       <img
                         src={item?.img}
                         alt=""
-                        className=" transition-all duration-500 group-hover:scale-[108%]"
+                        className=" transition-all duration-500 group-hover:scale-[108%] w-full h-full object-cover"
                       />
                     </div>
                     <div className="absolute bottom-[-30%] left-[50%] z-10 w-[calc(100%-2rem)] translate-x-[-50%] rounded-lg bg-btn  p-[25px] xl:p-[30px]">

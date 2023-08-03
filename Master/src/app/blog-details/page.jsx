@@ -15,8 +15,12 @@ const page = () => {
       {/* Blog Intro */}
       <div className="rounded-xl bg-white p-[30px] dark:bg-card">
         {/* Feature Image */}
-        <div className="overflow-hidden rounded-lg">
-          <img src="/assets/images/blog/blog-7.png" alt="" />
+        <div className="overflow-hidden rounded-lg w-full h-auto">
+          <img
+            src="/assets/images/blog/blog-7.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
         </div>
         {/* Details */}
         <div className="title mt-[40px]">
@@ -38,15 +42,15 @@ const page = () => {
           <p className="text-text">
             Quantum technology is expected href fundamentally change many key
             areas of society. Researchers are convinced that there are many more
-            useful quantum properties and applications href explore than those we
-            know today. A team of researchers at Chalmers University of
+            useful quantum properties and applications href explore than those
+            we know today. A team of researchers at Chalmers University of
             Technology in Sweden have now developed open-source, freely
             available software that will pave the way for new discoveries in the
             field and accelerate quantum research significantly.
           </p>
           <p className="mt-[30px] text-text">
-            Within a few decades, quantum technology is expected href become a key
-            technology in areas such as health, communication, defence and
+            Within a few decades, quantum technology is expected href become a
+            key technology in areas such as health, communication, defence and
             energy. The power and potential of the technology lie in the odd and
             very special properties of quantum particles. Of particular interest
             href researchers in the field are the superconducting properties of
@@ -56,10 +60,10 @@ const page = () => {
             entirely new technologies used in applications such as magnetic
             resonance imaging equipment, maglev trains and quantum computer
             components. However, years of research and development remain before
-            a quantum computer can be expected href solve real computing problems
-            in practice, for example. The research community is convinced that
-            there are many more revolutionary discoveries href be made in quantum
-            technology than those we know today.
+            a quantum computer can be expected href solve real computing
+            problems in practice, for example. The research community is
+            convinced that there are many more revolutionary discoveries href be
+            made in quantum technology than those we know today.
           </p>
           <div className="mt-[30px] rounded-xl bg-btn p-[30px]">
             <div className="flex gap-[20px]">
@@ -71,10 +75,10 @@ const page = () => {
                 />
               </div>
               <p className="text-[18px] leading-[30px] text-white">
-                Quantum technology is expected href fundamentally change many key
-                areas of society. Researchers are convinced that there are many
-                more useful quantum properties and applications href explore than
-                those we know today.
+                Quantum technology is expected href fundamentally change many
+                key areas of society. Researchers are convinced that there are
+                many more useful quantum properties and applications href
+                explore than those we know today.
               </p>
             </div>{" "}
           </div>
@@ -251,11 +255,11 @@ const page = () => {
                 </div>
                 <div className="mt-[10px]">
                   <p className="text-text">
-                    We want href find out about all the other exciting properties
-                    of unconventional superconductors. Our software is powerful,
-                    educational and user-friendly, and we hope that it will help
-                    generate new understanding and suggest entirely new
-                    applications for these unexplored superconductors
+                    We want href find out about all the other exciting
+                    properties of unconventional superconductors. Our software
+                    is powerful, educational and user-friendly, and we hope that
+                    it will help generate new understanding and suggest entirely
+                    new applications for these unexplored superconductors
                   </p>
                 </div>
               </div>

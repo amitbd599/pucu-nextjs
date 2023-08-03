@@ -15,7 +15,7 @@ const page = () => {
             could be a new product line or seasonal products instead.
           </p>
           <div className="mt-[60px]">
-            <div className="overflow-hidden ">
+            <div className="overflow-hidden w-full h-auto">
               <img
                 src="assets/images/projects/project-1.png"
                 alt=""

@@ -28,7 +28,7 @@ const page = () => {
                   key={index}
                 >
                   <div className="boxShadow rounded-xl bg-white p-[30px] dark:bg-btn dark:shadow-none">
-                    <div>
+                    <div className="w-[60px] h-[60px]" >
                       <img src={item.img} alt="" className="w-[60px]" />
                     </div>
                     <div className="mt-[20px]">
@@ -60,7 +60,7 @@ const page = () => {
       {/* Counter section */}
       <div className="mt-[60px] grid grid-cols-12 gap-[20px]">
         <div className="col-span-6 md:col-span-3">
-          <div className="flex items-center gap-[20px]">
+          <div className="block md:flex items-center gap-[20px]">
             <h2 className="text-[50px] text-theme">
               <TrackVisibility once>
                 {({ isVisible }) =>
@@ -78,7 +78,7 @@ const page = () => {
           </div>
         </div>
         <div className="col-span-6 md:col-span-3">
-          <div className="flex items-center gap-[20px]">
+        <div className="block md:flex items-center gap-[20px]">
             <h2 className="text-[50px] text-theme">
               {" "}
               <TrackVisibility once>
@@ -97,7 +97,7 @@ const page = () => {
           </div>
         </div>
         <div className="col-span-6 md:col-span-3">
-          <div className="flex items-center gap-[20px]">
+        <div className="block md:flex items-center gap-[20px]">
             <h2 className="text-[50px] text-theme">
               {" "}
               <TrackVisibility once>
@@ -116,7 +116,7 @@ const page = () => {
           </div>
         </div>
         <div className="col-span-6 md:col-span-3">
-          <div className="flex items-center gap-[20px]">
+        <div className="block md:flex items-center gap-[20px]">
             <h2 className="text-[50px] text-theme">
               {" "}
               <TrackVisibility once>
