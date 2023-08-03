@@ -60,3 +60,98 @@ Version      : 1.0.1
 .b-opa {
   background: #33333394 !important;
 }
+
+/* Loader Css */
+.InitLoader {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fingerprint-spinner,
+.fingerprint-spinner * {
+  box-sizing: border-box;
+}
+
+.fingerprint-spinner {
+  height: 100px;
+  width: 100px;
+  padding: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fingerprint-spinner .spinner-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #2ff093;
+  animation: fingerprint-spinner-animation 1500ms
+    cubic-bezier(0.68, -0.75, 0.265, 1.75) infinite forwards;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(1) {
+  height: calc(90px / 9 + 0 * 90px / 9);
+  width: calc(90px / 9 + 0 * 90px / 9);
+  animation-delay: calc(50ms * 1);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(2) {
+  height: calc(90px / 9 + 1 * 90px / 9);
+  width: calc(90px / 9 + 1 * 90px / 9);
+  animation-delay: calc(50ms * 2);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(3) {
+  height: calc(90px / 9 + 2 * 90px / 9);
+  width: calc(90px / 9 + 2 * 90px / 9);
+  animation-delay: calc(50ms * 3);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(4) {
+  height: calc(90px / 9 + 3 * 90px / 9);
+  width: calc(90px / 9 + 3 * 90px / 9);
+  animation-delay: calc(50ms * 4);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(5) {
+  height: calc(90px / 9 + 4 * 90px / 9);
+  width: calc(90px / 9 + 4 * 90px / 9);
+  animation-delay: calc(50ms * 5);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(6) {
+  height: calc(90px / 9 + 5 * 90px / 9);
+  width: calc(90px / 9 + 5 * 90px / 9);
+  animation-delay: calc(50ms * 6);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(7) {
+  height: calc(90px / 9 + 6 * 90px / 9);
+  width: calc(90px / 9 + 6 * 90px / 9);
+  animation-delay: calc(50ms * 7);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(8) {
+  height: calc(90px / 9 + 7 * 90px / 9);
+  width: calc(90px / 9 + 7 * 90px / 9);
+  animation-delay: calc(50ms * 8);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(9) {
+  height: calc(90px / 9 + 8 * 90px / 9);
+  width: calc(90px / 9 + 8 * 90px / 9);
+  animation-delay: calc(50ms * 9);
+}
+
+@keyframes fingerprint-spinner-animation {
+  100% {
+    transform: rotate(360deg);
+  }
+}

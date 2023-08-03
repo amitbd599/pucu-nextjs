@@ -12,14 +12,14 @@ import {
 import ReactTyped from "react-typed";
 import { usePathname } from "next/navigation";
 import { ThemeProvider } from "@material-tailwind/react";
+import InitLoader from "./initLoader";
 export default function MasterLayout({ children }) {
-  // const [dark, setDark] = useState(localStorage?.getItem("theme") || null);
+  const [dark, setDark] = useState();
+  const [initLoader, setInitLoader] = useState(true);
 
-  const dark = localStorage?.getItem("theme");
-
-  // useEffect(() => {
-  //   setDark(localStorage.getItem("theme"));
-  // }, []);
+  useEffect(() => {
+    setDark(localStorage.getItem("theme"));
+  }, []);
   const [sidebar, setSidebar] = useState(false);
   const pathname = usePathname();
 
@@ -40,9 +40,17 @@ export default function MasterLayout({ children }) {
   useEffect(() => {
     setSidebar(false);
     window.scrollTo(0, 0);
+
+    setTimeout(function () {
+      setInitLoader(false);
+    }, 2000);
   }, [pathname]);
   return (
     <ThemeProvider>
+      <div className={initLoader ? "" : "hidden"}>
+        <InitLoader />
+      </div>
+
       <div className={dark === "dark" ? "dark" : "bg-bodyWhite"}>
         {/* Header Section */}
         <header>
