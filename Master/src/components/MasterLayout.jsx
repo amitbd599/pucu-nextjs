@@ -11,15 +11,15 @@ import {
 } from "react-icons/fa6";
 import ReactTyped from "react-typed";
 import { usePathname } from "next/navigation";
-
-
 import { ThemeProvider } from "@material-tailwind/react";
 export default function MasterLayout({ children }) {
-  const [dark, setDark] = useState();
+  // const [dark, setDark] = useState(localStorage?.getItem("theme") || null);
 
-  useEffect(() => {
-    setDark(localStorage.getItem("theme"));
-  }, []);
+  const dark = localStorage?.getItem("theme");
+
+  // useEffect(() => {
+  //   setDark(localStorage.getItem("theme"));
+  // }, []);
   const [sidebar, setSidebar] = useState(false);
   const pathname = usePathname();
 
