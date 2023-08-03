@@ -15,7 +15,7 @@ import { ThemeProvider } from "@material-tailwind/react";
 import InitLoader from "./initLoader";
 export default function MasterLayout({ children }) {
   const [dark, setDark] = useState();
-  const [initLoader, setInitLoader] = useState(true);
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     setDark(localStorage.getItem("theme"));
@@ -42,12 +42,12 @@ export default function MasterLayout({ children }) {
     window.scrollTo(0, 0);
 
     setTimeout(function () {
-      setInitLoader(false);
+      setLoader(false);
     }, 2000);
   }, [pathname]);
   return (
     <ThemeProvider>
-      <div className={initLoader ? "" : "hidden"}>
+      <div className={loader ? "" : "hidden"}>
         <InitLoader />
       </div>
 
