@@ -66,9 +66,9 @@ const page = () => {
               {Blog.map((item, index) => (
                 <div className="col-span-12 md:col-span-6" key={index}>
                   <div className="group relative mb-[88px]">
-                    <div className="overflow-hidden rounded-xl">
+                    <div className="overflow-hidden rounded-xl ">
                       <img
-                        src={item.img}
+                        src={item?.img}
                         alt=""
                         className=" transition-all duration-500 group-hover:scale-[108%]"
                       />

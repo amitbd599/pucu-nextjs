@@ -18,7 +18,7 @@ const page = () => {
             <div className="grid grid-cols-12 md:gap-[30px]">
               <div className="col-span-12 mb-[40px] md:col-span-6 md:mb-0">
                 <div className="boxShadow group rounded-xl bg-white p-[20px] dark:bg-btn dark:shadow-none">
-                  <div className="overflow-hidden rounded-lg">
+                  <div className="overflow-hidden rounded-lg w-[346px] h-[233px] d-flex item-center">
                     <img
                       src="/assets/images/show/image-5.png"
                       alt=""
@@ -37,7 +37,7 @@ const page = () => {
               </div>
               <div className="col-span-12 mb-[40px] md:col-span-6 md:mb-0">
                 <div className="boxShadow group rounded-xl bg-white p-[20px] dark:bg-btn dark:shadow-none">
-                  <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden rounded-lg w-[346px] h-[233px] d-flex item-center">
                     <img
                       src="/assets/images/show/image-6.png"
                       alt=""
@@ -58,7 +58,7 @@ const page = () => {
               </div>
               <div className="col-span-12 mb-[40px] md:col-span-6 md:mb-0">
                 <div className="boxShadow group rounded-xl bg-white p-[20px] dark:bg-btn dark:shadow-none">
-                  <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden rounded-lg w-[346px] h-[233px] d-flex item-center">
                     <img
                       src="/assets/images/show/image-7.png"
                       alt=""
@@ -79,7 +79,7 @@ const page = () => {
               </div>
               <div className="col-span-12 mb-[40px] md:col-span-6 md:mb-0">
                 <div className="boxShadow group rounded-xl bg-white p-[20px] dark:bg-btn dark:shadow-none">
-                  <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden rounded-lg w-[346px] h-[233px] d-flex item-center">
                     <img
                       src="/assets/images/show/image-8.png"
                       alt=""
@@ -98,7 +98,7 @@ const page = () => {
               </div>
               <div className="col-span-12 mb-[40px] md:col-span-6 md:mb-0">
                 <div className="boxShadow group rounded-xl bg-white p-[20px] dark:bg-btn dark:shadow-none">
-                  <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden rounded-lg w-[346px] h-[233px] d-flex item-center">
                     <img
                       src="/assets/images/show/image-9.png"
                       alt=""
@@ -119,7 +119,7 @@ const page = () => {
               </div>
               <div className="col-span-12 mb-[40px] md:col-span-6 md:mb-0">
                 <div className="boxShadow group rounded-xl bg-white p-[20px] dark:bg-btn dark:shadow-none">
-                  <div className="overflow-hidden rounded-lg">
+                <div className="overflow-hidden rounded-lg w-[346px] h-[233px] d-flex item-center">
                     <img
                       src="/assets/images/show/image-10.png"
                       alt=""
