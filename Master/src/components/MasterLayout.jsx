@@ -12,7 +12,7 @@ import {
 import ReactTyped from "react-typed";
 import { usePathname } from "next/navigation";
 import { ThemeProvider } from "@material-tailwind/react";
-import InitLoader from "./initLoader";
+import InitLoader from "./InitLoader";
 export default function MasterLayout({ children }) {
   const [dark, setDark] = useState();
   const [loader, setLoader] = useState(true);
