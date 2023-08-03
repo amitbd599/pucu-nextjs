@@ -12,15 +12,13 @@ import {
 import ReactTyped from "react-typed";
 import { usePathname } from "next/navigation";
 import { Toaster } from "react-hot-toast";
-import { preToast } from "@/helpers/SessionHelper";
+
 import { ThemeProvider } from "@material-tailwind/react";
 export default function MasterLayout({ children }) {
   const [dark, setDark] = useState();
-  const [switchDark, setSwitchDark] = useState();
 
   useEffect(() => {
     setDark(localStorage.getItem("theme"));
-    setSwitchDark(localStorage.getItem("switchDark"));
   }, []);
   const [sidebar, setSidebar] = useState(false);
   const pathname = usePathname();
@@ -42,18 +40,9 @@ export default function MasterLayout({ children }) {
   useEffect(() => {
     setSidebar(false);
     window.scrollTo(0, 0);
-    if (switchDark === null) {
-      preToast();
-    }
   }, [pathname]);
   return (
     <ThemeProvider>
-      <Toaster
-        containerClassName="toaster-container"
-        toastOptions={{
-          duration: 500000,
-        }}
-      />
       <div className={dark === "dark" ? "dark" : "bg-bodyWhite"}>
         {/* Header Section */}
         <header>
