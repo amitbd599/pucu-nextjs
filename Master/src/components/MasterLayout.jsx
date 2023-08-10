@@ -13,6 +13,9 @@ import ReactTyped from "react-typed";
 import { usePathname } from "next/navigation";
 import { ThemeProvider } from "@material-tailwind/react";
 import InitLoader from "./InitLoader";
+
+
+
 export default function MasterLayout({ children }) {
   const [dark, setDark] = useState();
   const [loader, setLoader] = useState(true);
@@ -323,6 +326,7 @@ export default function MasterLayout({ children }) {
         <section>
           <div className="container mx-auto">
             <div className="grid grid-cols-12 ">
+              
               <div className="col-span-12 lg:col-span-3 ">
                 <div className="info-card mt-[60px]">
                   <div className="rounded-[20px] bg-white px-[45px] py-[40px] dark:bg-card">

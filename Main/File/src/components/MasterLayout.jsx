@@ -145,11 +145,11 @@ export default function MasterLayout({ children }) {
         <div
           className={
             sidebar
-              ? "sidebar fixed left-0 top-0 z-[999] h-screen w-full bg-btn/60 transition-all duration-500"
-              : "sidebar fixed left-[100%] top-0 z-[999] h-screen w-full bg-btn/60 transition-all duration-500"
+              ? "sidebar fixed left-0 top-0 z-[999] h-full w-full bg-btn/60 transition-all duration-500"
+              : "sidebar fixed left-[100%] top-0 z-[999] h-full w-full bg-btn/60 transition-all duration-500"
           }
         >
-          <div className="ml-auto h-screen w-[300px] bg-white px-[30px] pt-[60px] dark:bg-card">
+          <div className="ml-auto h-full min-h-[750px] w-[300px] bg-white px-[30px] pt-[60px] dark:bg-card md:min-h-[700px]">
             <div className="relative flex justify-center">
               <button
                 onClick={sidebarControl}
@@ -255,6 +255,18 @@ export default function MasterLayout({ children }) {
                     Contact
                   </Link>
                 </li>
+                <li className=" text-[18px] font-semibold">
+                  <Link
+                    className={
+                      pathname === "/error"
+                        ? "inline-block py-[8px] text-theme dark:text-theme"
+                        : "inline-block py-[8px] text-btn transition-all duration-300 dark:text-white dark:hover:text-theme"
+                    }
+                    href={"/error"}
+                  >
+                    Error
+                  </Link>
+                </li>
               </ul>
             </nav>
             <div className="my-[30px] border-t border-[#ddd] dark:border-btn"></div>
@@ -275,7 +287,7 @@ export default function MasterLayout({ children }) {
                 </div>
               </div>
             </button>
-            <div className="contact absolute bottom-[30px] mt-[10px]">
+            <div className="contact mt-[40px] pb-[20px] md:mt-[0px]">
               <div>
                 <p className="text-[20px] font-semibold text-btn dark:text-white">
                   Follow Me:
